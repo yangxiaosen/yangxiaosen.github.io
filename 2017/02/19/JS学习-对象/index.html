@@ -14,7 +14,7 @@
 <meta property="og:url" content="https://yangxiaosen.github.io/2017/02/19/JS学习-对象/index.html">
 <meta property="og:site_name" content="杨晓森的个人博客">
 <meta property="og:description" content="本文记录js学习过程中的一些内容js对象">
-<meta property="og:updated_time" content="2017-02-19T13:44:43.876Z">
+<meta property="og:updated_time" content="2017-02-19T14:00:16.792Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS学习--对象">
 <meta name="twitter:description" content="本文记录js学习过程中的一些内容js对象">
@@ -183,44 +183,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="本文记录js学习过程中的一些内容"><a href="#本文记录js学习过程中的一些内容" class="headerlink" title="本文记录js学习过程中的一些内容"></a>本文记录js学习过程中的一些内容</h2><h2 id="js对象"><a href="#js对象" class="headerlink" title="js对象"></a>js对象</h2><a id="more"></a>
-<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>访问对象属性可以用.或者[]<br>例：<code>yangxiaosen.name  yangxiaosen[&#39;name&#39;]</code></p>
-<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>如果访问的属性名是不确定的，必须用[]<br><code>ex: var key=&#39;name&#39;;
-    yangxiaosen[&#39;key&#39;]</code></p>
-<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p> <code>function Hero(name){
-    this.name=name;
-    this.occupation=&#39;monica&#39;;
-    this.whoareyou=function(){
-    return &#39;i am&#39;+this.name+&#39;and i am&#39;+this.occupation;
-    }
- }</code><br> <code>var hero=Hero(&#39;yang&#39;)</code>,结果返回undefine<br> 因为没有用new 关键字，所以没有创建新对象，只是像其他函数一样执行，又由于函数中没有return语句，所以<br> 返回undefine，此时函数中的this的值是全局对象。</p>
-<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p><code>function C2(){ this.a=1;return {b:2}; }
-   var c1=new C2();
-   c1.a //undefine
-   c1.b //=2</code></p>
+        <h2 id="本文记录js学习过程中的一些内容"><a href="#本文记录js学习过程中的一些内容" class="headerlink" title="本文记录js学习过程中的一些内容"></a>本文记录js学习过程中的一些内容</h2><p>js对象<br><a id="more"></a></p>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>访问对象属性可以用.或者[]<br>例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yangxiaosen.name  yangxiaosen[<span class="string">'name'</span>]</div></pre></td></tr></table></figure></p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>如果访问的属性名是不确定的，必须用[]<br><figure class="highlight plain"><figcaption><span>var key='name';</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">yangxiaosen[&apos;key&apos;]</div></pre></td></tr></table></figure></p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> Hero(name)&#123;</div><div class="line">this.name=name;</div><div class="line">this.occupation=<span class="string">'monica'</span>;</div><div class="line">this.whoareyou=<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line"><span class="built_in">return</span> <span class="string">'i am'</span>+this.name+<span class="string">'and i am'</span>+this.occupation;</div><div class="line">&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">var hero=Hero(<span class="string">'yang'</span>)</div></pre></td></tr></table></figure>
+<p>结果返回undefine<br> 因为没有用new 关键字，所以没有创建新对象，只是像其他函数一样执行，又由于函数中没有return语句，所以<br> 返回undefine，此时函数中的this的值是全局对象。</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> <span class="function"><span class="title">C2</span></span>()&#123; this.a=1;<span class="built_in">return</span> &#123;b:2&#125;; &#125;</div><div class="line">   var c1=new C2();</div><div class="line">   c1.a //undefine</div><div class="line">   c1.b //=2</div></pre></td></tr></table></figure>
 <h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>拷贝某个对象或者将对象传递给某个变量，则对这个变量所做的操作都是会影响原有的对象</p>
-<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>   <code>var o={};
-   alert(o) 和 alert(o.toString())是等价的
-   &quot;i am:&quot;+o 和 &quot;i am:&quot;+o.toString()是等价的</code></p>
+<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var o=&#123;&#125;;</div><div class="line">alert(o) 和 alert(o.toString())是等价的</div><div class="line"><span class="string">"i am:"</span>+o 和 <span class="string">"i am:"</span>+o.toString()是等价的</div></pre></td></tr></table></figure>
 <h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><p>   函数对象的length属性用来记录对象的参数数量</p>
-<h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><p>   <code>call()和apply()  //改变函数对象的this引用为第一个参数
-   var some_obj={
-   name:&quot;someone&quot;,
-   say:function(who){
-     return &quot;hey&quot;+who+&quot;i am &quot;+this.name;
-   }
-   };
-   var my_obj={
-   name:&quot;yangxiaosen&quot;
-   };
-   some_obj.say.call(my_obj,&quot;dude&quot;)
-   等效于
-   some_obj.say.apply(my_obj,[&quot;dude&quot;])</code></p>
+<h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">call()和apply()  //改变函数对象的this引用为第一个参数</div><div class="line">var some_obj=&#123;</div><div class="line">name:<span class="string">"someone"</span>,</div><div class="line">say:<span class="keyword">function</span>(who)&#123;</div><div class="line">  <span class="built_in">return</span> <span class="string">"hey"</span>+who+<span class="string">"i am "</span>+this.name;</div><div class="line">&#125;</div><div class="line">&#125;;</div><div class="line">var my_obj=&#123;</div><div class="line">name:<span class="string">"yangxiaosen"</span></div><div class="line">&#125;;</div><div class="line">some_obj.say.call(my_obj,<span class="string">"dude"</span>)</div><div class="line">等效于</div><div class="line">some_obj.say.apply(my_obj,[<span class="string">"dude"</span>])</div></pre></td></tr></table></figure>
 <h2 id="9"><a href="#9" class="headerlink" title="9"></a>9</h2><p>   Number 对象提供了toString(radix)方法，其中radix为进制值</p>
-<h2 id="10"><a href="#10" class="headerlink" title="10"></a>10</h2><p>   String对象提供了转换大小写方法：<br>   <code>toUpperCase()和toLowerCase()</code><br>   字符串内部搜索<br>   <code>var s=&quot;jejfweafbd&quot;;
-   s.indexOf(&#39;e&#39;)  //1
-   s.indexOf(&#39;e&#39;,2) //5,搜索从2开始
-   s.lastIndexOf(&#39;e&#39;) //4，搜索从后面开始</code></p>
+<h2 id="10"><a href="#10" class="headerlink" title="10"></a>10</h2><p>   String对象提供了转换大小写方法：<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">toUpperCase()和toLowerCase()</div></pre></td></tr></table></figure></p>
+<p>   字符串内部搜索<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var s=<span class="string">"jejfweafbd"</span>;</div><div class="line">s.indexOf(<span class="string">'e'</span>)  //1</div><div class="line">s.indexOf(<span class="string">'e'</span>,2) //5,搜索从2开始</div><div class="line">s.lastIndexOf(<span class="string">'e'</span>) //4，搜索从后面开始</div></pre></td></tr></table></figure></p>
 
       
 
