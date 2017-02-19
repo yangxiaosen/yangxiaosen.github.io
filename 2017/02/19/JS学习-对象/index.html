@@ -6,21 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yangxiaosen.github.io">
-  <title>Hello World | 杨晓森的个人博客</title>
+  <title>JS学习--对象 | 杨晓森的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+  <meta name="description" content="本文记录js学习过程中的一些内容js对象">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://yangxiaosen.github.io/2017/02/04/hello-world/index.html">
+<meta property="og:title" content="JS学习--对象">
+<meta property="og:url" content="https://yangxiaosen.github.io/2017/02/19/JS学习-对象/index.html">
 <meta property="og:site_name" content="杨晓森的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2017-02-06T14:30:25.018Z">
+<meta property="og:description" content="本文记录js学习过程中的一些内容js对象">
+<meta property="og:updated_time" content="2017-02-19T13:44:43.876Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="JS学习--对象">
+<meta name="twitter:description" content="本文记录js学习过程中的一些内容js对象">
   
     <link rel="alternative" href="/atom.xml" title="杨晓森的个人博客" type="application/atom+xml">
   
@@ -166,36 +163,64 @@ Quick">
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-JS学习-对象" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      JS学习--对象
     </h1>
   
 
         
-        <a href="/2017/02/04/hello-world/" class="archive-article-date">
-  	<time datetime="2017-02-04T14:58:13.478Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-04</time>
+        <a href="/2017/02/19/JS学习-对象/" class="archive-article-date">
+  	<time datetime="2017-02-19T13:34:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-19</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h2 id="本文记录js学习过程中的一些内容"><a href="#本文记录js学习过程中的一些内容" class="headerlink" title="本文记录js学习过程中的一些内容"></a>本文记录js学习过程中的一些内容</h2><h2 id="js对象"><a href="#js对象" class="headerlink" title="js对象"></a>js对象</h2><a id="more"></a>
+<h2 id="1"><a href="#1" class="headerlink" title="1"></a>1</h2><p>访问对象属性可以用.或者[]<br>例：<code>yangxiaosen.name  yangxiaosen[&#39;name&#39;]</code></p>
+<h2 id="2"><a href="#2" class="headerlink" title="2"></a>2</h2><p>如果访问的属性名是不确定的，必须用[]<br><code>ex: var key=&#39;name&#39;;
+    yangxiaosen[&#39;key&#39;]</code></p>
+<h2 id="3"><a href="#3" class="headerlink" title="3"></a>3</h2><p> <code>function Hero(name){
+    this.name=name;
+    this.occupation=&#39;monica&#39;;
+    this.whoareyou=function(){
+    return &#39;i am&#39;+this.name+&#39;and i am&#39;+this.occupation;
+    }
+ }</code><br> <code>var hero=Hero(&#39;yang&#39;)</code>,结果返回undefine<br> 因为没有用new 关键字，所以没有创建新对象，只是像其他函数一样执行，又由于函数中没有return语句，所以<br> 返回undefine，此时函数中的this的值是全局对象。</p>
+<h2 id="4"><a href="#4" class="headerlink" title="4"></a>4</h2><p><code>function C2(){ this.a=1;return {b:2}; }
+   var c1=new C2();
+   c1.a //undefine
+   c1.b //=2</code></p>
+<h2 id="5"><a href="#5" class="headerlink" title="5"></a>5</h2><p>拷贝某个对象或者将对象传递给某个变量，则对这个变量所做的操作都是会影响原有的对象</p>
+<h2 id="6"><a href="#6" class="headerlink" title="6"></a>6</h2><p>   <code>var o={};
+   alert(o) 和 alert(o.toString())是等价的
+   &quot;i am:&quot;+o 和 &quot;i am:&quot;+o.toString()是等价的</code></p>
+<h2 id="7"><a href="#7" class="headerlink" title="7"></a>7</h2><p>   函数对象的length属性用来记录对象的参数数量</p>
+<h2 id="8"><a href="#8" class="headerlink" title="8"></a>8</h2><p>   <code>call()和apply()  //改变函数对象的this引用为第一个参数
+   var some_obj={
+   name:&quot;someone&quot;,
+   say:function(who){
+     return &quot;hey&quot;+who+&quot;i am &quot;+this.name;
+   }
+   };
+   var my_obj={
+   name:&quot;yangxiaosen&quot;
+   };
+   some_obj.say.call(my_obj,&quot;dude&quot;)
+   等效于
+   some_obj.say.apply(my_obj,[&quot;dude&quot;])</code></p>
+<h2 id="9"><a href="#9" class="headerlink" title="9"></a>9</h2><p>   Number 对象提供了toString(radix)方法，其中radix为进制值</p>
+<h2 id="10"><a href="#10" class="headerlink" title="10"></a>10</h2><p>   String对象提供了转换大小写方法：<br>   <code>toUpperCase()和toLowerCase()</code><br>   字符串内部搜索<br>   <code>var s=&quot;jejfweafbd&quot;;
+   s.indexOf(&#39;e&#39;)  //1
+   s.indexOf(&#39;e&#39;,2) //5,搜索从2开始
+   s.lastIndexOf(&#39;e&#39;) //4，搜索从后面开始</code></p>
 
       
 
@@ -225,6 +250,17 @@ Quick">
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -275,7 +311,7 @@ Quick">
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://yangxiaosen.github.io/2017/02/04/hello-world/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://yangxiaosen.github.io/2017/02/19/JS学习-对象/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,15 +325,11 @@ Quick">
   
 <nav id="article-nav">
   
-    <a href="/2017/02/08/Hexo-github搭建个人博客/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Hexo+github搭建个人博客
-        
-      </div>
-    </a>
   
+    <a href="/2017/02/08/Hexo-github搭建个人博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hexo+github搭建个人博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
@@ -309,7 +341,7 @@ Quick">
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="hello-world" data-title="Hello World" data-url="https://yangxiaosen.github.io/2017/02/04/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="JS学习-对象" data-title="JS学习--对象" data-url="https://yangxiaosen.github.io/2017/02/19/JS学习-对象/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
