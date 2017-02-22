@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://yangxiaosen.github.io">
-  <title>JS学习--正则表达式 | 杨晓森的个人博客</title>
+  <title>show | 杨晓森的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="本文记录js学习过程中的一些内容对js正则表达式做个记录，以便用到时备查">
-<meta property="og:type" content="article">
-<meta property="og:title" content="JS学习--正则表达式">
-<meta property="og:url" content="https://yangxiaosen.github.io/2017/02/22/JS学习-正则表达式/index.html">
+  <meta name="description" content="分享生活，分享技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="show">
+<meta property="og:url" content="https://yangxiaosen.github.io/show/index.html">
 <meta property="og:site_name" content="杨晓森的个人博客">
-<meta property="og:description" content="本文记录js学习过程中的一些内容对js正则表达式做个记录，以便用到时备查">
-<meta property="og:updated_time" content="2017-02-22T14:19:46.329Z">
+<meta property="og:description" content="分享生活，分享技术">
+<meta property="og:updated_time" content="2017-02-22T14:36:37.417Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JS学习--正则表达式">
-<meta name="twitter:description" content="本文记录js学习过程中的一些内容对js正则表达式做个记录，以便用到时备查">
+<meta name="twitter:title" content="show">
+<meta name="twitter:description" content="分享生活，分享技术">
   
     <link rel="alternative" href="/atom.xml" title="杨晓森的个人博客" type="application/atom+xml">
   
@@ -169,48 +169,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-JS学习-正则表达式" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="page-undefined" class="article article-type-page " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      JS学习--正则表达式
+      show
     </h1>
   
 
         
-        <a href="/2017/02/22/JS学习-正则表达式/" class="archive-article-date">
-  	<time datetime="2017-02-22T14:12:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-22</time>
+        <a href="/show/index.html" class="archive-article-date">
+  	<time datetime="2017-02-22T14:36:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="本文记录js学习过程中的一些内容"><a href="#本文记录js学习过程中的一些内容" class="headerlink" title="本文记录js学习过程中的一些内容"></a>本文记录js学习过程中的一些内容</h2><p>对js正则表达式做个记录，以便用到时备查<br><a id="more"></a></p>
-<h3 id="一、元字符"><a href="#一、元字符" class="headerlink" title="一、元字符"></a>一、元字符</h3><p>1，\b  单词的开头结尾，即单词的分界处<br>2，\d  一位数字（0，1…）<br>3， .  匹配除换行符(\n)以外的任意字符<br>4， *  重复任意次<br>5， +  重复一次或更多次<br>6， ^  匹配字符串的开始<br>7， $  匹配字符串的结束<br>8, \w  匹配字母或数字或下划线或汉字<br>9，\s  匹配任意的空白符<br>10，\  转义字符</p>
-<h3 id="二，字符的重复方式"><a href="#二，字符的重复方式" class="headerlink" title="二，字符的重复方式"></a>二，字符的重复方式</h3><p>1, *    重复零次或更多次<br>2, +    重复一次或更多次<br>3, ?    重复零次或一次<br>4, {n}    重复n次<br>5, {n,}    重复n次或更多次<br>6, {n,m}    重复n到m次</p>
-<h3 id="三，匹配字符集"><a href="#三，匹配字符集" class="headerlink" title="三，匹配字符集[]"></a>三，匹配字符集[]</h3><p>ex:[aeiou]  匹配a或e或i或o或u</p>
-<h3 id="四，分枝条件"><a href="#四，分枝条件" class="headerlink" title="四，分枝条件 |"></a>四，分枝条件 |</h3><p>ex: 0\d{2}-\d{8}|0\d{3}-\d{7}  匹配两种以连字号分隔的电话号码：一种是三位区号，8位本地号(如010-12345678)，一种是4位区号，7位本地号(0376-2233445)</p>
-<h3 id="五，反义"><a href="#五，反义" class="headerlink" title="五，反义"></a>五，反义</h3><p>\W    匹配任意不是字母，数字，下划线，汉字的字符<br>\S    匹配任意不是空白符的字符<br>\D    匹配任意非数字的字符<br>\B    匹配不是单词开头或结束的位置<br>[^x]    匹配除了x以外的任意字符<br>[^aeiou]    匹配除了aeiou这几个字母以外的任意字符</p>
-<h3 id="六，零宽断言"><a href="#六，零宽断言" class="headerlink" title="六，零宽断言"></a>六，零宽断言</h3><p>1，(?=exp)也叫零宽度正预测先行断言，它断言自身出现的位置的后面能匹配表达式exp。比如\b\w+(?=ing\b)，匹配以ing结尾的单词的前面部分(除了ing以外的部分)<br>2， (?&lt;=exp)也叫零宽度正回顾后发断言，它断言自身出现的位置的前面能匹配表达式exp。比如(?&lt;=\bre)\w+\b会匹配以re开头的单词的后半部分(除了re以外的部分)<br>3，零宽度负预测先行断言(?!exp)，断言此位置的后面不能匹配表达式exp。例如：\d{3}(?!\d)匹配三位数字，而且这三位数字的后面不能是数字<br>4，<code>(?&lt;!exp)</code>,零宽度负回顾后发断言来断言此位置的前面不能匹配表达式exp：<code>(?&lt;![a-z])\d{7}</code>匹配前面不是小写字母的七位数字</p>
-<h3 id="七，js中关于正则表达式的方法，属性"><a href="#七，js中关于正则表达式的方法，属性" class="headerlink" title="七，js中关于正则表达式的方法，属性"></a>七，js中关于正则表达式的方法，属性</h3><p>1，RegExp对象：正则表达式<br>   var reg=new RegExp(“a.<em>b”);<br>   文本标识法：var reg=/a.</em>b/;<br>2，RegExp对象属性：<br>   global:(g)默认为false,如果要将正则表达式匹配到第一个不结束继续匹配下去则设为ture<br>   ignoreCase:(i)默认为false,设置大小写相关性<br>   multiline:(m)默认false,设置是否跨行搜索<br>   lastIndex:搜索开始的索引位<br>   source:用于储存正则表达式匹配模式的属性<br>   <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ex:var reg=new RegExp(<span class="string">"a.*b"</span>,<span class="string">"gmi"</span>);</div><div class="line"> 或：var reg=/a.*b/igm;</div></pre></td></tr></table></figure></p>
-<p> 3，RegExp对象方法<br>   （1）查找匹配方法：<br>         test()：返回布尔值，找到内容为true，反之为false<br>         exec()：返回匹配到的内容的数组<br>         <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ex: /a.*b/i.test(<span class="string">'Addbanb'</span>);   //<span class="literal">true</span></div><div class="line">    /a.*b/i.exec(<span class="string">'Addbanb'</span>);   //[<span class="string">"Addbanb"</span>]</div></pre></td></tr></table></figure></p>
-<pre><code>(2)以RegExp对象为参数的字符串方法：
-     match()：返回包含匹配内容的数组
-     <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">ex: <span class="string">"helloworld"</span>.match(/l/);    //[<span class="string">'l'</span>]</div><div class="line">ex: <span class="string">"helloworld"</span>.match(/l/g);    //[<span class="string">'l'</span>,<span class="string">'l'</span>,<span class="string">'l'</span>]</div></pre></td></tr></table></figure>
-
-     search()：返回第一个匹配内容所在的位置
-     <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ex: <span class="string">"helloworld"</span>.search(/l/);    //2</div></pre></td></tr></table></figure>
-
-     replace()：将匹配文本替换成其他内容
-     <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ex：<span class="string">"helloWorld"</span>.replace(/[A-Z]/g,<span class="string">''</span>);     //<span class="string">"helloorld"</span></div></pre></td></tr></table></figure>
-
-     split(): 根据正则表达式将字符串分割成若干个数组元素
-     <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ex: <span class="string">"2:3:4:5"</span>.split(<span class="string">":"</span>)	//将返回[<span class="string">"2"</span>, <span class="string">"3"</span>, <span class="string">"4"</span>, <span class="string">"5"</span>]</div></pre></td></tr></table></figure>
-</code></pre>
+        
       
 
       
@@ -239,17 +218,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -300,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://yangxiaosen.github.io/2017/02/22/JS学习-正则表达式/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://yangxiaosen.github.io/show/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -312,16 +280,6 @@
 </article>
 
   
-<nav id="article-nav">
-  
-  
-    <a href="/2017/02/19/JS学习-对象/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">JS学习--对象</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 
 
@@ -330,7 +288,7 @@
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="JS学习-正则表达式" data-title="JS学习--正则表达式" data-url="https://yangxiaosen.github.io/2017/02/22/JS学习-正则表达式/"></div>
+	<div class="ds-thread" data-thread-key="undefined" data-title="show" data-url="https://yangxiaosen.github.io/show/index.html"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
@@ -372,7 +330,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
