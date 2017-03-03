@@ -8,25 +8,25 @@
   <link rel="dns-prefetch" href="https://yangxiaosen.github.io">
   <title>js学习--继承 | 杨晓森的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="js–原型与继承
-1，原型（prototype）：函数对象的属性 12345678910ex: function Father(sex)&amp;#123;   this.sex=sex;   this.height=180;   say:function()&amp;#123;      return &quot;chinese&quot;   &amp;#125;  &amp;#125;  Father.prototype.lastname=&quot;">
+  <meta name="description" content="##js–原型与继承记录js原型继承，以备查询
+1，原型（prototype）：函数对象的属性 12345678910ex: function Father(sex)&amp;#123;   this.sex=sex;   this.height=180;   say:function()&amp;#123;      return &quot;chinese&quot;   &amp;#125;  &amp;#125;  Father.proto">
 <meta property="og:type" content="article">
 <meta property="og:title" content="js学习--继承">
 <meta property="og:url" content="https://yangxiaosen.github.io/2017/03/04/js学习-继承/index.html">
 <meta property="og:site_name" content="杨晓森的个人博客">
-<meta property="og:description" content="js–原型与继承
-1，原型（prototype）：函数对象的属性 12345678910ex: function Father(sex)&amp;#123;   this.sex=sex;   this.height=180;   say:function()&amp;#123;      return &quot;chinese&quot;   &amp;#125;  &amp;#125;  Father.prototype.lastname=&quot;">
+<meta property="og:description" content="##js–原型与继承记录js原型继承，以备查询
+1，原型（prototype）：函数对象的属性 12345678910ex: function Father(sex)&amp;#123;   this.sex=sex;   this.height=180;   say:function()&amp;#123;      return &quot;chinese&quot;   &amp;#125;  &amp;#125;  Father.proto">
 <meta property="og:image" content="http://om52ixlhi.bkt.clouddn.com/1.JPG">
 <meta property="og:image" content="http://om52ixlhi.bkt.clouddn.com/4.JPG">
 <meta property="og:image" content="http://om52ixlhi.bkt.clouddn.com/7.JPG">
 <meta property="og:image" content="http://om52ixlhi.bkt.clouddn.com/3.JPG">
 <meta property="og:image" content="http://om52ixlhi.bkt.clouddn.com/1.JPG">
 <meta property="og:image" content="http://om52ixlhi.bkt.clouddn.com/6.JPG">
-<meta property="og:updated_time" content="2017-03-03T16:08:33.591Z">
+<meta property="og:updated_time" content="2017-03-03T16:12:35.175Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="js学习--继承">
-<meta name="twitter:description" content="js–原型与继承
-1，原型（prototype）：函数对象的属性 12345678910ex: function Father(sex)&amp;#123;   this.sex=sex;   this.height=180;   say:function()&amp;#123;      return &quot;chinese&quot;   &amp;#125;  &amp;#125;  Father.prototype.lastname=&quot;">
+<meta name="twitter:description" content="##js–原型与继承记录js原型继承，以备查询
+1，原型（prototype）：函数对象的属性 12345678910ex: function Father(sex)&amp;#123;   this.sex=sex;   this.height=180;   say:function()&amp;#123;      return &quot;chinese&quot;   &amp;#125;  &amp;#125;  Father.proto">
 <meta name="twitter:image" content="http://om52ixlhi.bkt.clouddn.com/1.JPG">
   
     <link rel="alternative" href="/atom.xml" title="杨晓森的个人博客" type="application/atom+xml">
@@ -199,7 +199,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>js–原型与继承</p>
+        <p>##js–原型与继承<br>记录js原型继承，以备查询</p>
 <p>1，原型（prototype）：函数对象的属性<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">ex: <span class="keyword">function</span> Father(sex)&#123;</div><div class="line">   this.sex=sex;</div><div class="line">   this.height=180;</div><div class="line">   say:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">      <span class="built_in">return</span> <span class="string">"chinese"</span></div><div class="line">   &#125;</div><div class="line">  &#125;</div><div class="line">  Father.prototype.lastname=<span class="string">"yang"</span>;</div><div class="line">  var son=new Father(<span class="string">"male"</span>);</div><div class="line">  &gt;&gt;son.lastname     //<span class="string">"yang"</span></div></pre></td></tr></table></figure></p>
 <p>2，对象关于原型的函数：<br>  propertyIsEnumerable():判断其中有哪些可枚举的属性<br>  hasOwnProperty():判断属性是对象自身属性还是原型属性<br>  isPrototypeOf()：判断当前对象是否是另一个对象的原型<br>3，<em>proto</em> 对象指向原型的链接(某些浏览器支持)<br>4，继承模式<br>  （1）原型链<br>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">ex:<span class="keyword">function</span> <span class="function"><span class="title">One</span></span>()&#123;&#125;</div><div class="line">   <span class="keyword">function</span> <span class="function"><span class="title">Two</span></span>()&#123;&#125;</div><div class="line">   <span class="keyword">function</span> <span class="function"><span class="title">Three</span></span>()&#123;&#125;</div><div class="line">   Two.prototype=new One();</div><div class="line">   Three.prototype=new Two();</div></pre></td></tr></table></figure></p>
 <pre><code>好处：对构造器One(),Two()的删除，修改不会影响原有的继承，因为继承的是构造器所创建的实体。
@@ -450,11 +450,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">js</a>
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+                <a href="javascript:void(0)" class="js-tag color3">js</a>
               </li>
             
             <div class="clearfix"></div>
